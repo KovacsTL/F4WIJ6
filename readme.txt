@@ -3,8 +3,7 @@ Kovács Tamás Levente
 Szöveg titkosító
 
 Feladat leírása:
-Egy egyszerű szöveg titkosító és visszafejtő alkalmazás, amely a felhasználó által megadott szöveget titkosítja egy véletlenszerű kulcs segítségével, 
-majd a titkosított szöveget vissza tudja fejteni az eredeti szöveggé. A titkosításhoz véletlenszerűen generált kulcsot lehetőség van lementeni és később felhaszálni.
+Egy egyszerű szöveg titkosító és visszafejtő alkalmazás, amely a felhasználó által megadott szöveget titkosítja egy véletlenszerű kulcs segítségével, majd a titkosított szöveget vissza tudja fejteni az eredeti szöveggé. A titkosításhoz véletlenszerűen generált kulcsot lehetőség van lementeni és később felhaszálni.
 
 Modulok:
 Tkinter: A grafikus felület megvalósításához használt modul.
