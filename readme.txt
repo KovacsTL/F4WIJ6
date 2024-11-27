@@ -12,6 +12,10 @@ Ez az osztály felelős a titkosítási és visszafejtési folyamatok kezelésé
 Modulok:
 Tkinter: A grafikus felület megvalósításához használt modul.
 random: A titkosító kulcs véletlenszerű generálásához használt modul.
+szoveg_titkosito_KTL: Ez egy saját modul, amely felelős a szöveg titkosításáért és visszafejtéséért.
+
+Osztály:
+SzovegTitkositoKTL: Ez az osztály felelős a titkosítási és visszafejtési folyamatok kezeléséért a grafikus felhasználói felületen keresztül.
 
 Függvények:
 uiKTL(): A felhasználói felület létrehozása, beleértve a bemeneti mezőt, a gombokat és a kimeneti mezőket.
