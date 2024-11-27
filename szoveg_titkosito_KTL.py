@@ -2,14 +2,14 @@ import random
 
 class SzovegTitkositoKTL:
     def __init__(self):
-        # Karakterek listája és kulcs generálása
+        #Karakterek listája és kulcs generálása
         self.karakterek = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÚÜÖÓŰabcdefghijklmnopqrstuvwxyzáéúüöóű!%.?_-@*(){}'=/,;: "
         self.karakterek = list(self.karakterek)
         self.kulcs = self.karakterek.copy()
         random.shuffle(self.kulcs)
 
     def titkositas(self, szoveg):
-        # Szöveg titkosítása
+        #Szöveg titkosítása
         titkositott = ""
         for betu in szoveg:
             if betu in self.karakterek:
@@ -20,7 +20,7 @@ class SzovegTitkositoKTL:
         return titkositott
 
     def visszafejtes(self, titkositott):
-        # Titkosított szöveg visszafejtése
+        #Titkosított szöveg visszafejtése
         visszafejtett = ""
         for betu in titkositott:
             if betu in self.kulcs:

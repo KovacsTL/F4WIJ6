@@ -10,7 +10,7 @@ class GUI:
 
         self.szo_titkosito = SzovegTitkositoKTL()
 
-        # Szöveg bemenet és kimenetek
+        #Szöveg bemenet és kimenetek
         self.szoveg_bemenet = Entry(master, width=50)
         self.titkositott_kimenet = StringVar()
         self.visszafejtett_kimenet = StringVar()
@@ -32,13 +32,13 @@ class GUI:
         Button(self.master, text="Kilépés", command=self.master.quit).pack(pady=50)
 
     def titkositas(self):
-        # Szöveg titkosítása
+        #Szöveg titkosítása
         szoveg = self.szoveg_bemenet.get()
         titkositott = self.szo_titkosito.titkositas(szoveg)
         self.titkositott_kimenet.set(titkositott)
 
     def visszafejtes(self):
-        # Titkosított szöveg visszafejtése
+        #Titkosított szöveg visszafejtése
         titkositott = self.titkositott_kimenet.get()
         visszafejtett = self.szo_titkosito.visszafejtes(titkositott)
         self.visszafejtett_kimenet.set(visszafejtett)
