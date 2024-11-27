@@ -6,8 +6,8 @@ Feladat leírása:
 Egy egyszerű szöveg titkosító és visszafejtő alkalmazás, amely a felhasználó által megadott szöveget titkosítja egy véletlenszerű kulcs segítségével, 
 majd a titkosított szöveget vissza tudja fejteni az eredeti szöveggé. 
 
-SzovegTitkositoKTL
-Ez az osztály felelős a titkosítási és visszafejtési folyamatok kezeléséért a grafikus felhasználói felületen keresztül. 
+Osztály:
+SzovegTitkositoKTL: Ez az osztály felelős a titkosítási és visszafejtési folyamatok kezeléséért a grafikus felhasználói felületen keresztül. 
 
 Modulok:
 Tkinter: A grafikus felület megvalósításához használt modul.
