@@ -16,6 +16,6 @@ SzovegTitkositoKTL: Ez az osztály felelős a titkosítási és visszafejtési f
 GUI_KTL: Ez az osztály a grafikus felhasználói felületet kezeli. A Tkinter segítségével létrehozza az ablakot, kezel különböző gombokat és szövegmezőket, és összekapcsolja azokat a SzovegTitkositoKTL osztály metódusaival.
 
 Függvények:
-uiKTL(): A felhasználói felület létrehozása, beleértve a bemeneti mezőt, a gombokat és a kimeneti mezőket.
-titkositasKTL(): A megadott szöveg titkosítása a generált kulcs segítségével.
-visszafejtesKTL(): A titkosított szöveg visszafejtése a kulcs és az eredeti karakterek listájának felhasználásával.
+ui_KTL: A felhasználói felület létrehozása, beleértve a bemeneti mezőt, a gombokat és a kimeneti mezőket.
+titkositas_KTL: A megadott szöveg titkosítása a generált kulcs segítségével.
+visszafejtes_KTL: A titkosított szöveg visszafejtése a kulcs és az eredeti karakterek listájának felhasználásával.
