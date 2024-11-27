@@ -8,7 +8,7 @@ Egy egyszerű szöveg titkosító és visszafejtő alkalmazás, amely a felhaszn
 Modulok:
 Tkinter: A grafikus felület megvalósításához használt modul.
 random: A titkosító kulcs véletlenszerű generálásához használt modul.
-szoveg_titkosito_KTL: Ez egy saját modul, amely felelős a szöveg titkosításáért és visszafejtéséért.
+szoveg_titkosito_KTL: Ez egy saját modul, amely felelős a szöveg titkosításáért, visszafejtéséért illetve a kulcs lementéséért és betöltéséért.
 
 Osztályok:
 SzovegTitkositoKTL: Ez az osztály felelős a titkosítási és visszafejtési folyamatok kezeléséért a grafikus felhasználói felületen keresztül.
