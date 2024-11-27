@@ -32,10 +32,10 @@ class SzovegTitkositoKTL:
 
     # Kulcs mentése
     def kulcs_mentes_txt_KTL(self, fajlnev_KTL):
-        with open(fajlnev_KTL, 'w') as file_KTL:
-            file_KTL.write(' '.join(self.kulcs_KTL))
+        with open(fajlnev_KTL, 'w') as file:
+            file.write(' '.join(self.kulcs_KTL))
 
     #Kulcs betöltése
     def kulcs_betoltes_txt_KTL(self, fajlnev_KTL):
-        with open(fajlnev_KTL, 'r') as file_KTL:
-            self.kulcs_KTL = file_KTL.read().split()
+        with open(fajlnev_KTL, 'r') as file:
+            self.kulcs_KTL = file.read().split()
