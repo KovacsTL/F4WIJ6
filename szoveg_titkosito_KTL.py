@@ -30,12 +30,12 @@ class SzovegTitkositoKTL:
                 visszafejtett_KTL += betu_KTL
         return visszafejtett_KTL
 
-    # Kulcs mentése
-    def kulcs_mentes_txt_KTL(self, fajlnev_KTL):
-        with open(fajlnev_KTL, 'w') as file:
+    #Kulcs mentése
+    def kulcs_mentes_txt_KTL(self, file):
+        with open(file, 'w') as file:
             file.write(' '.join(self.kulcs_KTL))
 
     #Kulcs betöltése
-    def kulcs_betoltes_txt_KTL(self, fajlnev_KTL):
-        with open(fajlnev_KTL, 'r') as file:
+    def kulcs_betoltes_txt_KTL(self, file):
+        with open(file, 'r') as file:
             self.kulcs_KTL = file.read().split()
