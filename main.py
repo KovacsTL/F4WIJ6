@@ -2,36 +2,36 @@ from tkinter import *
 from szoveg_titkosito_KTL import SzovegTitkositoKTL
 
 class GUI_KTL:
-    def __init__(self, master):
-        self.master = master
-        self.master.title("Szöveg Titkosító")
-        self.master.geometry("500x350")
-        self.master.resizable(False, False)
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Szöveg Titkosító")
+        self.root.geometry("500x350")
+        self.root.resizable(False, False)
 
         self.szo_titkosito_KTL = SzovegTitkositoKTL()
 
         #Szöveg bemenet és kimenetek
-        self.szoveg_bemenet_KTL = Entry(master, width=50)
+        self.szoveg_bemenet_KTL = Entry(root, width=50)
         self.titkositott_kimenet_KTL = StringVar()
         self.visszafejtett_kimenet_KTL = StringVar()
 
         self.ui_KTL()
 
     def ui_KTL(self):
-        Label(self.master, text="Titkosítandó szöveg:").pack(pady=5)
+        Label(self.root, text="Titkosítandó szöveg:").pack(pady=5)
         self.szoveg_bemenet_KTL.pack()
 
-        Label(self.master, text="Titkosított szöveg:").pack(pady=5)
-        Entry(self.master, textvariable=self.titkositott_kimenet_KTL, width=50).pack()
+        Label(self.root, text="Titkosított szöveg:").pack(pady=5)
+        Entry(self.root, textvariable=self.titkositott_kimenet_KTL, width=50).pack()
 
-        Label(self.master, text="Visszafejtett szöveg:").pack(pady=5)
-        Entry(self.master, textvariable=self.visszafejtett_kimenet_KTL, width=50).pack()
+        Label(self.root, text="Visszafejtett szöveg:").pack(pady=5)
+        Entry(self.root, textvariable=self.visszafejtett_kimenet_KTL, width=50).pack()
 
-        Button(self.master, text="Titkosítás", command=self.titkositas_KTL).pack(pady=10)
-        Button(self.master, text="Visszafejtés", command=self.visszafejtes_KTL).pack(pady=5)
-        Button(self.master, text="Kulcs mentés", command=self.kulcs_mentes_KTL).pack(pady=5)
-        Button(self.master, text="Kulcs betöltés", command=self.kulcs_betolt_KTL).pack(pady=5)
-        Button(self.master, text="Kilépés", command=self.master.quit).pack(pady=50)
+        Button(self.root, text="Titkosítás", command=self.titkositas_KTL).pack(pady=10)
+        Button(self.root, text="Visszafejtés", command=self.visszafejtes_KTL).pack(pady=5)
+        Button(self.root, text="Kulcs mentés", command=self.kulcs_mentes_KTL).pack(pady=5)
+        Button(self.root, text="Kulcs betöltés", command=self.kulcs_betolt_KTL).pack(pady=5)
+        Button(self.root, text="Kilépés", command=self.root.quit).pack(pady=50)
 
     def titkositas_KTL(self):
         szoveg_KTL = self.szoveg_bemenet_KTL.get()
